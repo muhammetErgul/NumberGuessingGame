@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #15202B;
+    object-fit: contain;
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+}
+
+span {
+    color: rgb(255, 0, 51);
+}
+/* difficulty level buttons */
+.difficultyLevelBtns {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.difficultyLevelBtns button {
+    padding:5px 20px;
+    margin: 0 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.difficultyLevelBtns button:active{
+    scale: 0.97;
+}
+.easyBtn {
+    background-color: rgb(9, 105, 9);
+    color: #fff;
+}
+.normalBtn {
+    background-color: rgb(105, 105, 105);
+    color: #fff;
+}
+.hardBtn {
+    background-color: rgb(168, 2, 2);
+    color: #fff;
+}
+/* difficulty level buttons */
+
+.gameContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    width: 600px;
+    height: auto;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 6px 12px 12px;
+}
+
+.gameHaders {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.gameHaders h1 {
+    letter-spacing: 4px;
+    color: rgb(10, 10, 163);
+    border-bottom: 2px solid rgb(10, 10, 163);
+}
+
+.gameHaders h3 {
+    font-style: italic;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin-top: 5px;
+    color: #2b792f;
+}
+
+.gameInfo {
+    text-align: center;
+    width: inherit;
+}
+
+.gameInfo .scores {
+   display: flex;
+   justify-content: space-around;
+}
+
+
+.gameInfo .scoreInfo h4 {
+    font-size: 18px;
+    line-height: 1.7rem;
+}
+
+.gameInfo p {
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#gameAction {
+    text-align: center;
+}
+
+#gameAction input {
+    display: block;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    border: 3px solid rgb(10, 10, 163);
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+#gameAction button {
+    border: none;
+    background-color: darkorchid;
+    padding: 15px 30px;
+    margin: 10px 5px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#gameAction button:active {
+    transform: scale(0.95);
+}

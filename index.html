@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <div class="contianer">
+        <div class="difficultyLevelBtns">
+            <button id="easyBtn" class="easyBtn" >Easy</button>
+            <button id="normalBtn" class="normalBtn">Normal</button>
+            <button id="hardBtn" class="hardBtn">Hard</button>
+        </div>
+        <div class="gameContainer">
+            <div class="gameHaders">
+                <h1 id="title">Numbricks</h1>
+                <h3 id="subTitle">Number Guessing Game</h3>
+            </div>
+            <div class="gameInfo">
+                <div class="scores">
+                    <div class="scoreInfo">
+                        <h4>Best</h4>
+                        <p id="highScore">0</p>
+                    </div>
+                    <div class="scoreInfo">
+                        <h4>Current</h4>
+                        <p id="currentScore">0</p>
+                    </div>
+                </div>
+                <p id="feedback"></p>
+                <p id="history">-History</p>
+                <p id="time">00:00:00</p>
+            </div>
+            <div id="gameAction">
+                <input type="text" name="guess" id="guess" autocomplete="off" disabled />
+                <button id="guessBtn">Guess</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
